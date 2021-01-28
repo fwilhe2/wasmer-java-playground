@@ -15,6 +15,4 @@ jobs:
           java-version: ${{ matrix.java }}
           architecture: x64
       - run: mvn -v
-      - run: mvn --batch-mode --no-transfer-progress verify
-      - run: java -cp target/my-app-1.0-SNAPSHOT.jar com.github.fwilhe.Dummy
-      - run: mvn --batch-mode --no-transfer-progress exec:java -Dexec.mainClass="com.github.fwilhe.Dummy"
+      - run: mvn --batch-mode --no-transfer-progress exec:java --settings=settings.xml -Dexec.mainClass="com.github.fwilhe.Dummy"

@@ -14,6 +14,11 @@
   </properties>
   <dependencies>
     <dependency>
+      <groupId>org.wasmer</groupId>
+      <artifactId>wasmer-jni-amd64-linux</artifactId>
+      <version>0.3.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>5.5.2</version>
